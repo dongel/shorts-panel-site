@@ -2,10 +2,10 @@
 <html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Gizlilik Politikası</title><link rel="stylesheet" href="style.css"></head>
 <body><main>
-<nav><a href="./">Ana sayfa</a><a href="privacy.html">Gizlilik politikası</a></nav>
+<nav><a href="./">Ana sayfa</a><a href="privacy.html">Gizlilik politikası</a><a href="terms.html">Kullanım şartları</a></nav>
 <h1>Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 6 Ekim 2026</p>
-<p>Bu politika, Shorts Panel uygulamasının Google kullanıcı verilerini nasıl eriştiğini, kullandığını, sakladığını ve paylaştığını açıklar. Shorts Panel, tek bir kanal sahibinin kendi sunucusunda çalıştırdığı özel bir araçtır.</p>
+<p class="muted">Son güncelleme: 6 Ekim 2026 (saklama ve silme bölümü eklendi)</p>
+<p>Bu politika, Shorts Panel uygulamasının Google kullanıcı verilerini nasıl eriştiğini, kullandığını, sakladığını ve paylaştığını açıklar. Shorts Panel, tek bir kanal sahibinin kendi sunucusunda çalıştırdığı özel bir araçtır. Shorts Panel YouTube API Hizmetlerini kullanır.</p>
 <h2>Erişilen veriler</h2>
 <ul>
 <li><strong>YouTube yükleme (youtube.upload):</strong> Kanal sahibinin onayladığı videoları sahibinin kanalına yüklemek için.</li>
@@ -14,13 +14,15 @@
 </ul>
 <h2>Kullanım</h2>
 <p>Veriler yalnızca yukarıdaki amaçlarla, kanal sahibinin kendi kanalını yönetmesi için kullanılır. Reklam, profil çıkarma veya başka bir amaçla kullanılmaz.</p>
-<h2>Saklama</h2>
-<p>Google erişim belirteçleri ve video istatistikleri yalnızca kanal sahibinin kendi sunucusunda, yalnızca sahibinin okuyabildiği dosyalarda saklanır. Kanal sahibi bağlantıyı istediği an <a href="https://myaccount.google.com/permissions">Google hesap izinlerinden</a> kaldırabilir; bu durumda saklanan belirteçler geçersiz olur.</p>
+<h2>Saklama ve silme</h2>
+<p>Google erişim belirteçleri ve video istatistikleri yalnızca kanal sahibinin kendi sunucusunda, yalnızca sahibinin okuyabildiği dosyalarda saklanır. YouTube API Hizmetlerinden alınan istatistikler bağlantı açıkken saatte bir yenilenir. 30 gün boyunca yenilenemeyen YouTube verileri (ör. bağlantı kaldırıldığında) uygulama tarafından otomatik olarak silinir.</p>
+<h2>Erişimi kaldırma</h2>
+<p>Kanal sahibi uygulamanın erişimini istediği an <a href="https://security.google.com/settings/security/permissions">Google güvenlik ayarlarındaki izinler sayfasından</a> kaldırabilir. Erişim kaldırıldığında saklanan belirteçler geçersiz olur ve YouTube verileri yukarıdaki kurala göre silinir.</p>
 <h2>Paylaşım</h2>
 <p>Google kullanıcı verileri hiçbir üçüncü tarafla paylaşılmaz, satılmaz veya aktarılmaz. Video içerikleri yalnızca kanal sahibinin onayıyla YouTube'a gönderilir.</p>
 <h2>Google API Hizmetleri Kullanıcı Verileri Politikası</h2>
 <p>Shorts Panel'in Google API'lerinden aldığı bilgileri kullanması ve aktarması, Sınırlı Kullanım (Limited Use) gereklilikleri dahil olmak üzere <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>'ye uygundur. YouTube API Hizmetleri, <a href="https://www.youtube.com/t/terms">YouTube Hizmet Şartları</a> ve <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> kapsamında kullanılır.</p>
 <h2>İletişim</h2>
 <p>Sorularınız için <a href="https://github.com/dongel/shorts-panel-site/issues">GitHub üzerinden</a> ulaşabilirsiniz.</p>
-<footer>English summary: Shorts Panel accesses YouTube upload, comment, read-only and analytics scopes solely so the channel owner can upload approved videos, post a comment on them and view their statistics. Tokens and statistics are stored only on the owner's own server and are never shared with or sold to third parties. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</footer>
+<footer>English summary: Shorts Panel accesses YouTube upload, comment, read-only and analytics scopes solely so the channel owner can upload approved videos, post a comment on them and view their statistics. Tokens and statistics are stored only on the owner's own server; statistics are refreshed hourly and any YouTube API data not refreshed within 30 days is automatically deleted. Access can be revoked at https://security.google.com/settings/security/permissions. and are never shared with or sold to third parties. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. This app uses YouTube API Services; by using it you agree to the YouTube Terms of Service (https://www.youtube.com/t/terms).</footer>
 </main></body></html>
